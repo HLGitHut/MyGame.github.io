@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="tuanjie-container" class="tuanjie-desktop">
-      <canvas id="tuanjie-canvas" width=927 height=2106 tabindex="-1"></canvas>
+      <canvas id="tuanjie-canvas" width=1080 height=2340 tabindex="-1"></canvas>
       <div id="tuanjie-loading-bar">
         <div id="tuanjie-logo"></div>
         <div id="tuanjie-progress-bar-empty">
@@ -61,9 +61,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/MyGame.github.io.loader.js";
       var config = {
-        dataUrl: buildUrl + "/3d77e4bc69026f1777136ed3ebe8082a.data.unityweb",
-        frameworkUrl: buildUrl + "/213c02e44b42925d4898a22d8e2fe722.js.unityweb",
-        codeUrl: buildUrl + "/04669de884a43be66a3b35e980aaa1b6.wasm.unityweb",
+        dataUrl: buildUrl + "/MyGame.github.io.data.unityweb",
+        frameworkUrl: buildUrl + "/MyGame.github.io.framework.js.unityweb",
+        codeUrl: buildUrl + "/MyGame.github.io.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GSH",
         productName: "TurnTube",
@@ -96,8 +96,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "927px";
-        canvas.style.height = "2106px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "2340px";
       }
 
       loadingBar.style.display = "block";
